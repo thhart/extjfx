@@ -1,23 +1,12 @@
 package cern.extjfx.chart.data;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
-
+import java.util.*;
+import javafx.collections.*;
+import javafx.collections.ListChangeListener.Change;
 import org.junit.Test;
 
-import cern.extjfx.chart.data.LimitedFifoObservableList;
-import javafx.collections.ListChangeListener;
-import javafx.collections.ListChangeListener.Change;
-import javafx.collections.ObservableList;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.*;
 
 public class LimitedFifoObservableListTest {
 

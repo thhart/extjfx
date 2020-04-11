@@ -4,26 +4,12 @@
 
 package cern.extjfx.chart;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-import com.sun.javafx.css.converters.SizeConverter;
-
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.css.CssMetaData;
-import javafx.css.SimpleStyleableDoubleProperty;
-import javafx.css.Styleable;
-import javafx.css.StyleableProperty;
+import java.util.*;
+import javafx.beans.property.*;
+import javafx.css.*;
+import javafx.css.converter.SizeConverter;
 import javafx.geometry.Dimension2D;
-import javafx.scene.chart.NumberAxis;
-import javafx.scene.chart.ValueAxis;
+import javafx.scene.chart.*;
 
 /**
  * Linear numeric axis.

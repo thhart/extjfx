@@ -4,21 +4,14 @@
 
 package cern.extjfx.chart.data;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verifyZeroInteractions;
-
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-
 import cern.extjfx.chart.NumericAxis;
-import cern.extjfx.chart.data.ArrayData;
-import cern.extjfx.chart.data.AxisBoundRangeCalculator;
-import cern.extjfx.chart.data.ChartData;
-import cern.extjfx.chart.data.Range;
 import cern.extjfx.test.FxJUnit4Runner;
 import javafx.scene.chart.ValueAxis;
+import org.junit.*;
+import org.junit.runner.RunWith;
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
 
 @RunWith(FxJUnit4Runner.class)
 public class DefaultRangeCalculatorTest {

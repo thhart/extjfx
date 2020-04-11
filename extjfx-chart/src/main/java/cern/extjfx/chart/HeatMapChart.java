@@ -4,58 +4,25 @@
 
 package cern.extjfx.chart;
 
-import static cern.extjfx.chart.HeatMapChart.DataOriginPointLocation.BOTTOM_LEFT;
-import static cern.extjfx.chart.HeatMapChart.DataOriginPointLocation.TOP_LEFT;
-import static java.util.Objects.requireNonNull;
-import static javafx.geometry.Side.LEFT;
-import static javafx.geometry.Side.TOP;
-import static javafx.scene.paint.Color.BLACK;
-import static javafx.scene.paint.Color.BLUE;
-import static javafx.scene.paint.Color.GREEN;
-import static javafx.scene.paint.Color.INDIGO;
-import static javafx.scene.paint.Color.ORANGE;
-import static javafx.scene.paint.Color.RED;
-import static javafx.scene.paint.Color.VIOLET;
-import static javafx.scene.paint.Color.WHITE;
-import static javafx.scene.paint.Color.YELLOW;
-import static javafx.scene.paint.CycleMethod.NO_CYCLE;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Objects;
-
-import com.sun.javafx.css.converters.BooleanConverter;
-
-import javafx.beans.InvalidationListener;
+import java.util.*;
 import javafx.beans.Observable;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.*;
+import javafx.beans.property.*;
 import javafx.collections.ObservableList;
-import javafx.css.CssMetaData;
-import javafx.css.Styleable;
-import javafx.css.StyleableBooleanProperty;
-import javafx.css.StyleableProperty;
-import javafx.geometry.Bounds;
-import javafx.geometry.Side;
-import javafx.scene.chart.Axis;
-import javafx.scene.chart.Chart;
-import javafx.scene.chart.ValueAxis;
-import javafx.scene.image.ImageView;
-import javafx.scene.image.PixelWriter;
-import javafx.scene.image.WritableImage;
+import javafx.css.*;
+import javafx.css.converter.BooleanConverter;
+import javafx.geometry.*;
+import javafx.scene.chart.*;
+import javafx.scene.image.*;
 import javafx.scene.layout.Region;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.CycleMethod;
-import javafx.scene.paint.LinearGradient;
-import javafx.scene.paint.Stop;
-import javafx.scene.shape.LineTo;
-import javafx.scene.shape.MoveTo;
-import javafx.scene.shape.Path;
-import javafx.scene.shape.Rectangle;
+import javafx.scene.paint.*;
+import javafx.scene.shape.*;
+
+import static java.util.Objects.requireNonNull;
+import static cern.extjfx.chart.HeatMapChart.DataOriginPointLocation.*;
+import static javafx.geometry.Side.*;
+import static javafx.scene.paint.Color.*;
+import static javafx.scene.paint.CycleMethod.NO_CYCLE;
 
 /**
  * HeatMapChart is a specialized chart that uses colors to represent data values. An example of a HeatMapChart:<br><br>

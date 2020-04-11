@@ -4,20 +4,15 @@
 
 package cern.extjfx.fxml;
 
-import static java.util.Objects.requireNonNull;
-import static javafx.fxml.FXMLLoader.CONTROLLER_SUFFIX;
-
 import java.net.URL;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Map;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+
+import static java.util.Objects.requireNonNull;
+import static javafx.fxml.FXMLLoader.CONTROLLER_SUFFIX;
 
 /**
  * A view class that for a given controller (class or instance) loads corresponding FXML file and applies associated CSS

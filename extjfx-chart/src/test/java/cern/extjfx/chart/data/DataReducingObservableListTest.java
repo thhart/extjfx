@@ -4,21 +4,15 @@
 
 package cern.extjfx.chart.data;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
-
+import cern.extjfx.test.FxJUnit4Runner;
+import javafx.collections.*;
+import javafx.scene.chart.*;
+import javafx.scene.chart.XYChart.Data;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import cern.extjfx.chart.data.ChartData;
-import cern.extjfx.chart.data.DataReducingObservableList;
-import cern.extjfx.chart.data.ListData;
-import cern.extjfx.test.FxJUnit4Runner;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.scene.chart.NumberAxis;
-import javafx.scene.chart.ValueAxis;
-import javafx.scene.chart.XYChart.Data;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 @RunWith(FxJUnit4Runner.class)
 public class DataReducingObservableListTest {

@@ -4,34 +4,21 @@
 
 package cern.extjfx.chart.plugin;
 
-import static cern.extjfx.chart.XYChartPaneShim.localToChartPane;
-import static cern.extjfx.chart.XYChartPaneTestHelper.PRECISION;
-import static cern.extjfx.chart.XYChartPaneTestHelper.createTestChartPaneWithOverlayCharts;
-import static cern.extjfx.chart.XYChartPaneTestHelper.resizeRelocateLayout;
-import static javafx.scene.input.MouseEvent.MOUSE_CLICKED;
-import static javafx.scene.input.MouseEvent.MOUSE_DRAGGED;
-import static javafx.scene.input.MouseEvent.MOUSE_PRESSED;
-import static javafx.scene.input.MouseEvent.MOUSE_RELEASED;
-import static org.junit.Assert.assertEquals;
-
-import java.util.HashMap;
-import java.util.Map;
-
+import java.util.*;
+import cern.extjfx.chart.*;
+import cern.extjfx.chart.plugins.Zoomer;
+import cern.extjfx.test.FxJUnit4Runner;
+import javafx.event.*;
+import javafx.geometry.Point2D;
+import javafx.scene.chart.*;
+import javafx.scene.input.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import cern.extjfx.chart.Axes;
-import cern.extjfx.chart.XYChartPane;
-import cern.extjfx.chart.XYChartPaneTestHelper;
-import cern.extjfx.chart.plugins.Zoomer;
-import cern.extjfx.test.FxJUnit4Runner;
-import javafx.event.Event;
-import javafx.event.EventType;
-import javafx.geometry.Point2D;
-import javafx.scene.chart.ValueAxis;
-import javafx.scene.chart.XYChart;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
+import static cern.extjfx.chart.XYChartPaneShim.localToChartPane;
+import static cern.extjfx.chart.XYChartPaneTestHelper.*;
+import static javafx.scene.input.MouseEvent.*;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(FxJUnit4Runner.class)
 public class ZoomerTest {
