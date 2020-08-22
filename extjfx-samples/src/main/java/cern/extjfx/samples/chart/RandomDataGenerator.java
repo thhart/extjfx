@@ -12,7 +12,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.chart.XYChart.Data;
 
-class RandomDataGenerator {
+public class RandomDataGenerator {
 
     private RandomDataGenerator() {
     }

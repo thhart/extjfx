@@ -51,7 +51,6 @@ public class CrosshairIndicator<X, Y> extends AbstractDataFormattingPlugin<X, Y>
         crosshairPath.setManaged(false);
         coordinatesLabel.getStyleClass().add(STYLE_CLASS_LABEL);
         coordinatesLabel.setManaged(false);
-
         registerMouseEventHandler(MouseEvent.MOUSE_MOVED, mouseMoveHandler);
     }
 
